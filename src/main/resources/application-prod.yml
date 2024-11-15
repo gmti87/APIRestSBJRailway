@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    #url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    jakarta.persistence.url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    url: postgresql://postgres:KaDAyLVWGVNzGQTzuacqGXNiWNgJBbSx@autorack.proxy.rlwy.net:58615/railway
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
